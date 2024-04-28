@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+      - run: pip install -r requirements.txt
       - run: pip install financedatabase openpyxl
       - name: Add New Tickers and Update Old Ones
         uses: jannekem/run-python-script-action@v1
